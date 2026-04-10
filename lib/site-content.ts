@@ -1,145 +1,166 @@
 /** Demo content aligned with the iPortfolio template structure */
 
+import profilePhoto from "@/assets/images/profile.jpg";
+import heroImg from "@/assets/images/hero-banner.png";
+
 export const SITE = {
-  name: "Alex Smith",
-  siteTitle: "iPortfolio",
-  tagline: "UI/UX Designer & Web Developer.",
-  typedRoles: ["Designer", "Developer", "Freelancer", "Photographer"] as const,
-  profileImage:
-    "https://raw.githubusercontent.com/themewagon/iPortfolio/main/assets/img/my-profile-img.jpg",
-  heroImage:
-    "https://raw.githubusercontent.com/themewagon/iPortfolio/main/assets/img/hero-bg.jpg",
+  name: "Howaida Sayed",
+  siteTitle: "my portfolio",
+  tagline: "Senior Frontend Developer.", 
+  typedRoles: ["Frontend Developer", "react js developer", "vue js developer", "react native developer"] as const,
+  profileImage: profilePhoto,
+  heroImage:heroImg,
   social: {
-    twitter: "#",
-    facebook: "#",
-    instagram: "#",
-    skype: "#",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/howaida-sayed-4311721b0/",
+    whatsapp: "https://wa.me/201270141771?text=Hello%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you.",
+    github: "https://github.com/howaida-95",
+    telegram: "https://t.me/howaida_sayed",
+    facebook: "https://www.facebook.com/howyda.sayed.9",
   },
 };
 
-export const ABOUT_INTRO =
-  "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.";
+export const ABOUT_INTRO =`Senior Frontend Developer with 6 years of experience building scalable fintech and enterprise web
+applications using React, Next.js, and TypeScript.Specialized in performance optimization, API integration,
+and complex state management. Proven track record in delivering high-performance admin dashboards,
+financial systems, and reusable UI architectures.`
 
 export const ABOUT = {
-  lead:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  closing:
-    "Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.",
-  factsLeft: [
-    { label: "Birthday", value: "1 May 1995" },
-    { label: "Website", value: "www.example.com" },
-    { label: "Phone", value: "+123 456 7890" },
-    { label: "City", value: "New York, USA" },
+  lead: `I focus on building clean, scalable frontend architectures that balance performance, maintainability, and user experience. I enjoy turning complex business requirements into intuitive, high-quality interfaces, especially in fintech and data-driven environments.`,
+  closing: `I’m currently open to remote opportunities where I can contribute to impactful products, collaborate with strong teams, and continue growing as a frontend engineer. Let’s build something meaningful together.`,  factsLeft: [
+    { label: "Birthday", value: "17 May 1995" },
+    { label: "Phone", value: "+20 127 014 1771" },
+    { label: "City", value: "Asyut, Egypt" },
   ],
   factsRight: [
-    { label: "Age", value: "30" },
-    { label: "Degree", value: "Master" },
-    { label: "Email", value: "email@example.com" },
+    { label: "Degree", value: "Bachelor" },
+    { label: "Email", value: "howaidasayed95@gmail.com" },
     { label: "Freelance", value: "Available" },
   ],
 };
 
 export const STATS = [
-  { icon: "smile" as const, end: 232, title: "Happy Clients", subtitle: "consequuntur quae" },
-  { icon: "file" as const, end: 521, title: "Projects", subtitle: "adipisci atque cum quia aut" },
+  {
+    icon: "users" as const,
+    end: 2,
+    title: "Companies",
+    subtitle: "Startup and software house collaborations",
+  },
+  {
+    icon: "file" as const,
+    end: 38,
+    title: "Projects Delivered",
+    subtitle: "Web apps, dashboards, and e-commerce solutions",
+  },
+  {
+    icon: "smile" as const,
+    end: 6,
+    title: "Years Experience",
+    subtitle: "Frontend development with React ecosystem",
+  },
   {
     icon: "headset" as const,
-    end: 1453,
-    title: "Hours Of Support",
-    subtitle: "aut commodi quaerat",
+    end: 2,
+    title: "Mobile Applications",
+    subtitle: "Built using React Native",
   },
-  { icon: "users" as const, end: 32, title: "Hard Workers", subtitle: "rerum asperiores dolor" },
 ];
 
 export const SKILLS = [
-  { name: "HTML", percent: 100 },
-  { name: "CSS", percent: 90 },
-  { name: "JavaScript", percent: 75 },
-  { name: "PHP", percent: 80 },
-  { name: "WordPress/CMS", percent: 90 },
-  { name: "Photoshop", percent: 55 },
-];
+  "React",
+  "Next.js",
+  "Vue.js",
+  "Nuxt.js",
+  "React Native",
+  "JavaScript (ES6+)",
+  "TypeScript",
+  "HTML5",
+  "CSS3",
+  "SASS",
+  "Redux Toolkit",
+  "React Query",
+  "Tailwind CSS",
+  "Ant Design",
+  "Bootstrap",
+  "Jest",
+  "React Testing Library",
+  "Playwright",
+  "Git",
+  "GitHub",
+  "Figma",
+] as const;
 
 export const RESUME = {
   summary: {
-    name: "Brandon Johnson",
-    bio: "Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.",
-    lines: ["Portland par 127,Orlando, FL", "(123) 456-7891", "alice.barkley@example.com"],
+    name: "Howaida Sayed",
+    bio: "Experienced Senior Frontend Developer with 6 years of experience skilled in React, Next.js, Vue, and modern UI development, specializing in building scalable, user-centric web applications including financial platforms, dashboards, and e-commerce systems.",
+    lines: ["Asyut, Egypt", "+20 109 196 1711", "howaidasayed95@gmail.com"],
   },
-  education: [
-    {
-      degree: "Master of Fine Arts & Graphic Design",
-      years: "2015 - 2016",
-      school: "Rochester Institute of Technology, Rochester, NY",
-      body: "Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend",
-    },
-    {
-      degree: "Bachelor of Fine Arts & Graphic Design",
-      years: "2010 - 2014",
-      school: "Rochester Institute of Technology, Rochester, NY",
-      body: "Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila",
-    },
-  ],
   experience: [
     {
-      title: "Senior graphic design specialist",
-      years: "2019 - Present",
-      company: "Experion, New York, NY",
+      title: "Senior Frontend Developer",
+      years: "January 2023 – February 2026",
+      company: "Neoxero, Mansoura, Egypt (Remote)",
       bullets: [
-        "Lead in the design, development, and implementation of the graphic, layout, and production communication materials",
-        "Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.",
-        "Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design",
-        "Oversee the efficient use of production project budgets ranging from $2,000 - $25,000",
+        "Developed a full-scale financial platform including a loan management system handling interest calculations, VAT/origination fees, and dynamic amortization schedules with manual override capabilities.",
+        "Built a scalable admin dashboard supporting complex workflows for Investors, Borrowers, and Financial Advisors with real-time data synchronization.",
+        "Designed and implemented role-based access control (RBAC), secure routing guards, and multi-level approval workflows for fund transfers.",
+        "Built a real-time financial market analysis platform with advanced charting integrations (TradingView, Lightweight Charts) for stock and sector insights.",
+        "Developed a KPI management system with interactive dashboards and drag-and-drop functionality for customizable KPI visualization.",
+        "Contributed to a scalable e-commerce theme system (Zid Platform) by transforming UI elements into reusable React components, creating a starter kit that reduced development time by ~50%.",
       ],
     },
     {
-      title: "Graphic design specialist",
-      years: "2017 - 2018",
-      company: "Stepping Stone Advertising, New York, NY",
+      title: "Frontend Developer",
+      years: "January 2020 – December 2022",
+      company: "True Apps, Asyut, Egypt (Remote)",
       bullets: [
-        "Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).",
-        "Managed up to 5 projects or tasks at a given time while under pressure",
-        "Recommended and consulted with clients on the most appropriate graphic design",
-        "Created 4+ design presentations and proposals a month for clients and account managers",
+        "Developed a desktop web application and admin dashboard using React.js and Ant Design for the Fivestars platform, enabling efficient management of operations and user activities.",
+        "Built two cross-platform mobile applications (user & restaurant apps) using React Native, supporting seamless interaction between customers and service providers.",
+        "Designed and launched the official landing page using Next.js, improving brand visibility and user acquisition.",
+        "Managed application state across platforms using Redux, ensuring consistency and maintainability.",
       ],
     },
   ],
 };
 
-const PORTFOLIO_BASE =
-  "https://raw.githubusercontent.com/themewagon/iPortfolio/main/assets/img/portfolio";
-
-export const PORTFOLIO_ITEMS = [
-  { title: "App 1", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "app" as const, image: `${PORTFOLIO_BASE}/app-1.jpg` },
-  { title: "Product 1", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "product" as const, image: `${PORTFOLIO_BASE}/product-1.jpg` },
-  { title: "Branding 1", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "branding" as const, image: `${PORTFOLIO_BASE}/branding-1.jpg` },
-  { title: "Books 1", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "books" as const, image: `${PORTFOLIO_BASE}/books-1.jpg` },
-  { title: "App 2", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "app" as const, image: `${PORTFOLIO_BASE}/app-2.jpg` },
-  { title: "Product 2", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "product" as const, image: `${PORTFOLIO_BASE}/product-2.jpg` },
-  { title: "Branding 2", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "branding" as const, image: `${PORTFOLIO_BASE}/branding-2.jpg` },
-  { title: "Books 2", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "books" as const, image: `${PORTFOLIO_BASE}/books-2.jpg` },
-  { title: "App 3", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "app" as const, image: `${PORTFOLIO_BASE}/app-3.jpg` },
-  { title: "Product 3", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "product" as const, image: `${PORTFOLIO_BASE}/product-3.jpg` },
-  { title: "Branding 3", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "branding" as const, image: `${PORTFOLIO_BASE}/branding-3.jpg` },
-  { title: "Books 3", excerpt: "Lorem ipsum, dolor sit amet consectetur", category: "books" as const, image: `${PORTFOLIO_BASE}/books-3.jpg` },
-];
-
 export const PORTFOLIO_FILTERS = [
   { id: "all" as const, label: "All" },
-  { id: "app" as const, label: "App" },
-  { id: "product" as const, label: "Product" },
-  { id: "branding" as const, label: "Branding" },
-  { id: "books" as const, label: "Books" },
+  { id: "Web Applications" as const, label: "Web Applications" },
+  { id: "E-Commerce Solutions" as const, label: "E-Commerce Solutions" },
+  { id: "Mobile Applications" as const, label: "Mobile Applications" },
 ];
 
 export const SERVICES = [
-  { title: "Lorem Ipsum", description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident", icon: "briefcase" as const },
-  { title: "Dolor Sitema", description: "Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata", icon: "list" as const },
-  { title: "Sed ut perspiciatis", description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur", icon: "chart" as const },
-  { title: "Magni Dolores", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", icon: "binoculars" as const },
-  { title: "Nemo Enim", description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque", icon: "sun" as const },
-  { title: "Eiusmod Tempor", description: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi", icon: "calendar" as const },
+  {
+    title: "Frontend Development",
+    description: "Building scalable, performant web applications using React, Next.js, and TypeScript — from complex dashboards to customer-facing platforms.",
+    icon: "briefcase" as const
+  },
+  {
+    title: "UI Component Systems",
+    description: "Designing reusable component libraries and design systems with Tailwind, Ant Design, and Storybook that keep codebases consistent and maintainable.",
+    icon: "list" as const
+  },
+  {
+    title: "Data Dashboards & Charts",
+    description: "Turning complex data into clear, interactive visualizations using ECharts, Chart.js, and TradingView for financial and business intelligence platforms.",
+    icon: "chart" as const
+  },
+  {
+    title: "State & Data Management",
+    description: "Managing complex async state across data-intensive apps using Redux Toolkit and React Query, ensuring consistency and minimal unnecessary re-fetching.",
+    icon: "binoculars" as const
+  },
+  {
+    title: "Performance Optimization",
+    description: "Improving load times and UX through code splitting, lazy loading, infinite scrolling, PWA capabilities, and smart data fetching strategies.",
+    icon: "sun" as const
+  },
+  {
+    title: "Cross-Platform Development",
+    description: "Extending web products to mobile with React Native, and supporting multilingual audiences with full i18n and RTL/LTR handling.",
+    icon: "calendar" as const
+  },
 ];
 
 export const TESTIMONIALS = [
@@ -186,9 +207,8 @@ export const TESTIMONIALS = [
 ];
 
 export const CONTACT = {
-  address: "A108 Adam Street, New York, NY 535022",
-  phone: "+1 5589 55488 55",
-  email: "info@example.com",
-  mapSrc:
-    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus",
+  address: "Asyut, Egypt",
+  phone: "+20 127 014 1771",
+  email: "howaidasayed95@gmail.com",
+  mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28394.72424517535!2d31.16381848464572!3d27.177032045374613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14450be607cb7bcd%3A0xba699162bfc01112!2sAsyut%2C%20Al%20Hamraa%20Ath%20Thaneyah%2C%20El%20Fateh%2C%20Assiut%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1775775371811!5m2!1sen!2sus"
 };
