@@ -1,7 +1,7 @@
 /** Demo content aligned with the iPortfolio template structure */
 
 import profilePhoto from "@/assets/images/profile.jpg";
-import heroImg from "@/assets/images/hero-banner.png";
+import heroImg from "@/assets/images/hero-banner.webp";
 
 export const SITE = {
   name: "Howaida Sayed",

@@ -1,1 +1,528 @@
-[]
+[
+  {
+    "title": "Mohlel Front",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/1-home-page.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/1-home-page.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/2-market-sum.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/3-sectors.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/4-single-sector.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/5-shares.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/6-wallets-managments.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/7-wallet.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/8-favourites.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/9-cash-distribution.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/10-finances.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/11-company-profile.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/12-user-calendar.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/13-comparison.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/14-articles.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/15-personal-profile.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/16-change-password.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/17-login.webp"
+    ]
+  },
+  {
+    "title": "Mohlel Admin",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/1-auth-login.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/1-auth-login.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/2-dashboard.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/3-categories-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/3-categories.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/4-categories-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/5-sectors.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/6-sectors-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/7-companies-management-companies.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/8-companies-management-companies-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/9-companies-management-companies-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/10-companies-management-companies-financial-file.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/11-companies-management-companies-financial-file.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/12-companies-management-companies-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/13-companies-management-marketInfo-sum.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/14-companies-management-marketInfo-sum-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/15-companies-management-marketInfo-sum-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/16-companies-management-mainMarket-prices.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/17-companies-management-mainMarket-prices-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/18-companies-management-mainMarket-prices-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/19-companies-management-mainMarket-prices.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/20-companies-management-indicators.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/21-users.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/22-users-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/23-users-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/24-users-plan.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/25-subscriptions-plans.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/26-subscriptions-plans-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/27-subscriptions-users.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/28-subscriptions-payments.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/29-subscriptions-payments-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/30-news.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/31-news-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/32-news-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/33-marketing-coupons.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/34-marketing-coupons-statics.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/35-marketing-coupons-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/36-marketing-coupons-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/37-pages.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/38-pages-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/39-pages-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/40-home.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/41-home-hero.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/42-home-why-us.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/43-home-testimonials.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/44-home-testimonials-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/45-reviews.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/46-reviews-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/47-reviews-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/48-notifications-emails.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/49-calendar-stock-divinant.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/50-calendar-stock-divinant-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/51-calendar-stock-divinant-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/52-calendar-subscriptions.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/53-calendar-subscriptions-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/54-calendar-subscriptions-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/55-notifications-apps-notifications.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/56-admins-permissions.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/57-admins-permissions-add.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/58-admins-users.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/59-admins-users-view.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/60-admins-users-edit.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/61-system-log.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/62-reports.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/63-settings.webp"
+    ]
+  },
+  {
+    "title": "Dnaneer Front",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/1-investor-login.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/1-investor-login.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/2-investor-dasboard.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/3-investor-support.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/4-investor-opportunities.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/5-investor-investments.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/6-investor-wallet.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/7-investor-wallet-addBank.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/8-investor-transactions.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/9-investor-opportunities.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/10-investor-faq.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/11-investor-profile.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/12-borrower-login.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/13-borrower-dashboard.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/14-borrower-loans.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/15-borrower-loanReq.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/16-borrower-funds.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/17-borrower-wallet.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/18-borrower-transactions.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/19-borrower-profile.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/20-not-found.webp"
+    ]
+  },
+  {
+    "title": "Dnaneer Admin",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/01-login.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/01-login.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/02-opportunities-list.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/03-opportunity-add-form.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/04-opportunity-detail.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/05-opportunity-edit-form.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/06-opportunity-close.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/07-investors-all.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/08-investor-profile.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/09-investor-update.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/10-borrowers-list.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/11-borrower-profile.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/12-borrower-update.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/13-borrower-tab-company-info.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/14-borrower-tab-contact-person.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/15-borrower-tab-company-docs.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/16-borrower-tab-revenue.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/17-borrower-tab-financial-advisor.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/18-loans-list.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/19-due-repayments-list.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/20-loan-requests-list.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/21-financial-advisors.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/22-financial-advisor-add-form.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/23-dnaneer-wallet.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/24-funds-management.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/25-faqs.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/26-admin-transactions.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/27-admin-profile-users.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/28-admin-profile-bank-accounts.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/29-admin-profile-settings.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/30-wallet-ledger.webp"
+    ]
+  },
+  {
+    "title": "Kpi",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/5-kpi/1-login.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/1-login.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/2-kpis.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/3-add-kpi.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/4-add-category.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/5-import-excel.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/6-data.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/7-data-second-shape.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/8-dashboards.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/9-add-dashboard.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/10-add-chart.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/11-reports.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/12-analytics.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/13-users.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/14-groups.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/15-change-password.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/16-color-scheme.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/5-kpi/17-company-info.webp"
+    ]
+  },
+  {
+    "title": "Fivestars Front",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/1-home.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/1-home.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/2-restaurant-details.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/3-offers.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/4-filter.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/5-about-us.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/6-fivestars-front/6-contact-us.webp"
+    ]
+  },
+  {
+    "title": "Fivestars Admin",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Web Applications",
+    "coverImage": "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/1-login.webp",
+    "images": [
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/1-login.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/2-dashboard.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/3-notification.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/4-register-restaurat.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/5-all-restaurants.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/6-restaurant-review.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/7-add-restaurant1.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/8-add-restaurant1.png.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/9-add-restaurant3.png.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/10-add-restaurant4.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/11-add-restaurant5.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/12-add-restaurant6.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/13-users.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/14-reset-password.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/15-all-reviews.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/16-messages.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/17-add-offer.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/18-ads.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/19-add-category.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/20-offers.webp",
+      "/images/projects/1-Web%20Applications/react%20projects/7-fivestars-admin/21-categories.webp"
+    ]
+  },
+  {
+    "title": "Zeyada",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/1-zeyada/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/2-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/3-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/4-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/5-faqs.webp",
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/6-shipping-payment.webp",
+      "/images/projects/2-%20E-Commerce%20websites/1-zeyada/7-cart.webp"
+    ]
+  },
+  {
+    "title": "Elnasr",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/10-elnasr/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/3-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/4-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/5-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/6-profile.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/7-orders.webp",
+      "/images/projects/2-%20E-Commerce%20websites/10-elnasr/8-wishlist.webp"
+    ]
+  },
+  {
+    "title": "Pets",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/11-pets/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/11-pets/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/11-pets/2-sigle-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/11-pets/3-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/11-pets/4-cart.webp"
+    ]
+  },
+  {
+    "title": "Elmotlak",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/3-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/4-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/5-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/6-profile.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/7-addresses.webp",
+      "/images/projects/2-%20E-Commerce%20websites/12-elmotlak/8-wishlist.webp"
+    ]
+  },
+  {
+    "title": "Candles",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/13-candles/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/13-candles/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/13-candles/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/13-candles/3-prodcts.webp"
+    ]
+  },
+  {
+    "title": "Mahasen",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/14-mahasen/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/14-mahasen/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/14-mahasen/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/14-mahasen/3-profile.webp",
+      "/images/projects/2-%20E-Commerce%20websites/14-mahasen/4-addresses.webp"
+    ]
+  },
+  {
+    "title": "Snoor",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/15-snoor/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/15-snoor/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/15-snoor/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/15-snoor/3-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/15-snoor/4-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/15-snoor/5-cart.webp"
+    ]
+  },
+  {
+    "title": "Levari",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/16-levari/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/16-levari/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/16-levari/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/16-levari/3-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/16-levari/4-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/16-levari/5-cart.webp"
+    ]
+  },
+  {
+    "title": "No Added Sugar",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/17-no-added-sugar/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/17-no-added-sugar/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/17-no-added-sugar/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/17-no-added-sugar/3-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/17-no-added-sugar/4-cart.webp"
+    ]
+  },
+  {
+    "title": "Sukara",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/18-sukara/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/18-sukara/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/18-sukara/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/18-sukara/3-cart.webp"
+    ]
+  },
+  {
+    "title": "Elemlak",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/19-elemlak/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/19-elemlak/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/19-elemlak/2-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/19-elemlak/3-products.webp"
+    ]
+  },
+  {
+    "title": "Baralina",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/2-baralina/1-home-page.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/2-baralina/1-home-page.webp",
+      "/images/projects/2-%20E-Commerce%20websites/2-baralina/2-mini-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/2-baralina/3-cart-page.webp",
+      "/images/projects/2-%20E-Commerce%20websites/2-baralina/4-product-details.webp",
+      "/images/projects/2-%20E-Commerce%20websites/2-baralina/5-category.webp"
+    ]
+  },
+  {
+    "title": "Reek Elnahl",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/1-home-page.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/1-home-page.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/2-single-product-page.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/3-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/4-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/5-empty-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/6-favorites.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/7-empty-favorites.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/8-branches.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/9-preview.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/10-mini-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/11-gift.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/12-profile.webp",
+      "/images/projects/2-%20E-Commerce%20websites/3-reek-elnahl/13-not-found-page.webp"
+    ]
+  },
+  {
+    "title": "Turath",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/4-turath/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/4-turath/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/4-turath/2-home-ad.webp",
+      "/images/projects/2-%20E-Commerce%20websites/4-turath/3-single-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/4-turath/4-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/4-turath/5-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/4-turath/6-cart.webp"
+    ]
+  },
+  {
+    "title": "Silverback",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/5-silverback/1-home-page.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/1-home-page.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/2-search.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/3-favorites.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/4-side-menu.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/5-shop-now.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/6-category-page.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/7-category-faq.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/8-product-details.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/9-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/10-build-your-gym.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/11-build-your-gym2.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/12-our-best-work.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/13-profile.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/14-sortby.webp",
+      "/images/projects/2-%20E-Commerce%20websites/5-silverback/15-filterby.webp"
+    ]
+  },
+  {
+    "title": "Piccolo",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/6-piccolo/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/2-search.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/3-category1.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/4-category2.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/5-category3.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/6-partners.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/7-blogs.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/8-product-details.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/9-product-details2.webp"
+    ]
+  },
+  {
+    "title": "Bab Sharki",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/7-bab-sharki/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/7-bab-sharki/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/7-bab-sharki/2-search.webp",
+      "/images/projects/2-%20E-Commerce%20websites/7-bab-sharki/3-product-details.webp"
+    ]
+  },
+  {
+    "title": "Monfared",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/8-monfared/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/8-monfared/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/8-monfared/2-sigle-prodouct.webp"
+    ]
+  },
+  {
+    "title": "Furn",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/9-furn/1-home.webp",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/2-sigle-product.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/3-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/4-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/5-cart.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/6-adresses.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/7-add-address.webp",
+      "/images/projects/2-%20E-Commerce%20websites/9-furn/8-faqs.webp"
+    ]
+  },
+  {
+    "title": "User App",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Mobile Applications",
+    "coverImage": "/images/projects/3-Mobile%20Applications/1-user_App/1-fivestar.webp",
+    "images": [
+      "/images/projects/3-Mobile%20Applications/1-user_App/1-fivestar.webp",
+      "/images/projects/3-Mobile%20Applications/1-user_App/2-fivestar0.webp",
+      "/images/projects/3-Mobile%20Applications/1-user_App/3-fivestar1.webp",
+      "/images/projects/3-Mobile%20Applications/1-user_App/4-fivestar2.webp",
+      "/images/projects/3-Mobile%20Applications/1-user_App/5-fivestar3.webp",
+      "/images/projects/3-Mobile%20Applications/1-user_App/6-fivestar4.webp",
+      "/images/projects/3-Mobile%20Applications/1-user_App/7-fivestar5.webp"
+    ]
+  },
+  {
+    "title": "Admin App",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "Mobile Applications",
+    "coverImage": "/images/projects/3-Mobile%20Applications/2-admin_app/1-fivestarAdmin.webp",
+    "images": [
+      "/images/projects/3-Mobile%20Applications/2-admin_app/1-fivestarAdmin.webp",
+      "/images/projects/3-Mobile%20Applications/2-admin_app/2-fivestarAdmin1.webp",
+      "/images/projects/3-Mobile%20Applications/2-admin_app/3-fivestarAdmin2.webp",
+      "/images/projects/3-Mobile%20Applications/2-admin_app/4-fivestarAdmin3.webp",
+      "/images/projects/3-Mobile%20Applications/2-admin_app/5-fivestarAdmin4.webp"
+    ]
+  }
+]

@@ -1,6 +1,9 @@
 /**
  * Scans public/images/projects and writes lib/portfolio-manifest.json.
  * Run automatically via npm prebuild so Vercel deploys without bundling 300MB+ into lambdas.
+ *
+ * Prerequisite: run `npm run compress-images` first to convert PNGs → WebP
+ * under public/images/projects (or run both via `npm run prepare-images`).
  */
 import fs from "fs";
 import path from "path";
