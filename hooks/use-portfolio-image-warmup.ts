@@ -3,15 +3,18 @@
 import { useEffect } from "react";
 
 import type { PortfolioItem } from "@/lib/portfolio-types";
-import { scheduleIdle, warmImageCache, warmImageCacheMany } from "@/lib/warm-image-cache";
+import { scheduleIdle, warmImageCache } from "@/lib/warm-image-cache";
 
-const PRIORITY_TILES = 6;
-/** Extra shots to pull during idle (beyond cover) per project — rest load on hover / in carousel. */
-const IDLE_GALLERY_DEPTH = 3;
+const PRIORITY_TILES = 3;
 
 /**
- * Pre-warm cover images immediately, remaining covers on idle, then first few slides per project.
- * Full galleries warm on tile hover and via carousel neighbor preloads.
+ * Pre-warm only cover thumbnails:
+ *  - First 3 immediately (above the fold)
+ *  - Remaining covers on idle, staggered in small batches to avoid flooding
+ *
+ * Gallery images are NOT preloaded here — they warm on tile hover (capped)
+ * and via carousel neighbor preloads. This keeps the network free for the
+ * content the user actually sees first.
  */
 export function usePortfolioImageWarmup(items: readonly PortfolioItem[]) {
   useEffect(() => {
@@ -20,14 +23,11 @@ export function usePortfolioImageWarmup(items: readonly PortfolioItem[]) {
     const covers = items.map((i) => i.coverImage);
     covers.slice(0, PRIORITY_TILES).forEach((src) => warmImageCache(src));
 
-    scheduleIdle(() => {
-      warmImageCacheMany(covers.slice(PRIORITY_TILES));
-    });
-
-    scheduleIdle(() => {
-      for (const item of items) {
-        warmImageCacheMany(item.images.slice(0, IDLE_GALLERY_DEPTH));
-      }
-    });
+    const rest = covers.slice(PRIORITY_TILES);
+    const BATCH = 4;
+    for (let i = 0; i < rest.length; i += BATCH) {
+      const batch = rest.slice(i, i + BATCH);
+      scheduleIdle(() => batch.forEach((src) => warmImageCache(src)));
+    }
   }, [items]);
 }

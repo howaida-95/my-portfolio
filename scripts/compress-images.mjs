@@ -7,7 +7,7 @@
  *
  * For each source image it produces:
  *   public/images/projects/**\/{name}.webp        full-res  (max 1920px, q75)
- *   public/images/projects/**\/{name}_thumb.webp  grid cover (max 800px,  q72)
+ *   public/images/projects/**\/{name}_thumb.webp  grid cover (max 480px,  q65)
  *
  * Run once (or after adding new project screenshots):
  *   node scripts/compress-images.mjs
@@ -33,8 +33,8 @@ const OUT_DIR      = path.join(ROOT, "public", "images", "projects");
 
 const FULL_MAX_WIDTH  = 1920;
 const FULL_QUALITY    = 75;
-const THUMB_MAX_WIDTH = 800;
-const THUMB_QUALITY   = 72;
+const THUMB_MAX_WIDTH = 480;
+const THUMB_QUALITY   = 65;
 
 /** Matches original PNG/JPG sources */
 const PNG_EXT  = /\.(png|jpe?g)$/i;

@@ -28,7 +28,7 @@ function ProjectTile({
   tileIndex: number;
 }) {
   const [carouselOpen, setCarouselOpen] = useState(false);
-  const priority = tileIndex < 6;
+  const priority = tileIndex < 3;
 
   useEffect(() => {
     if (carouselOpen) {
@@ -39,7 +39,7 @@ function ProjectTile({
   return (
     <article
       className="group relative overflow-hidden rounded-lg border bg-card shadow-sm"
-      onMouseEnter={() => warmImageCacheMany(item.images)}
+      onMouseEnter={() => warmImageCacheMany(item.images.slice(0, 4))}
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image
@@ -50,7 +50,7 @@ function ProjectTile({
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           priority={priority}
           fetchPriority={priority ? "high" : "auto"}
-          quality={85}
+          quality={75}
           placeholder={item.blurDataURL ? "blur" : "empty"}
           blurDataURL={item.blurDataURL || undefined}
         />
