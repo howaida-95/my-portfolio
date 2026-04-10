@@ -1,16 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useMemo, useState } from "react";
-import { Link2, ZoomIn } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { ZoomIn } from "lucide-react";
 
 import { PortfolioImageCarousel } from "@/components/portfolio-image-carousel";
+import { usePortfolioImageWarmup } from "@/hooks/use-portfolio-image-warmup";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import type { PortfolioItem } from "@/lib/portfolio-types";
 import { PORTFOLIO_FILTERS } from "@/lib/site-content";
 import { cn } from "@/lib/utils";
+import { warmImageCacheMany } from "@/lib/warm-image-cache";
 
 import { SectionContainer } from "./section-container";
 import { SectionTitle } from "./section-title";
@@ -19,11 +20,27 @@ const PORTFOLIO_INTRO =
   "Here's a selection of the projects I've worked on — from financial platforms and market analytics tools to e-commerce systems, KPI dashboards, and React Native mobile apps."
 type FilterId = (typeof PORTFOLIO_FILTERS)[number]["id"];
 
-function ProjectTile({ item }: { item: PortfolioItem }) {
+function ProjectTile({
+  item,
+  tileIndex,
+}: {
+  item: PortfolioItem;
+  tileIndex: number;
+}) {
   const [carouselOpen, setCarouselOpen] = useState(false);
+  const priority = tileIndex < 6;
+
+  useEffect(() => {
+    if (carouselOpen) {
+      warmImageCacheMany(item.images);
+    }
+  }, [carouselOpen, item.images]);
 
   return (
-    <article className="group relative overflow-hidden rounded-lg border bg-card shadow-sm">
+    <article
+      className="group relative overflow-hidden rounded-lg border bg-card shadow-sm"
+      onMouseEnter={() => warmImageCacheMany(item.images)}
+    >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image
           src={item.coverImage}
@@ -32,6 +49,8 @@ function ProjectTile({ item }: { item: PortfolioItem }) {
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           unoptimized
+          priority={priority}
+          fetchPriority={priority ? "high" : "auto"}
         />
         <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:p-4">
           <h3 className="font-display text-base font-semibold text-white sm:text-lg">
@@ -94,6 +113,8 @@ export function PortfolioSection({ items }: { items: PortfolioItem[] }) {
     return items.filter((p) => p.category === filter);
   }, [filter, items]);
 
+  usePortfolioImageWarmup(items);
+
   return (
     <section
       id="portfolio"
@@ -117,8 +138,12 @@ export function PortfolioSection({ items }: { items: PortfolioItem[] }) {
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
-          {visible.map((item) => (
-            <ProjectTile key={`${item.category}-${item.coverImage}`} item={item} />
+          {visible.map((item, tileIndex) => (
+            <ProjectTile
+              key={`${item.category}-${item.coverImage}`}
+              item={item}
+              tileIndex={tileIndex}
+            />
           ))}
         </div>
       </SectionContainer>

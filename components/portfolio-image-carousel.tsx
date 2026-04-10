@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { warmImageCache } from "@/lib/warm-image-cache";
 
 type Props = {
   images: readonly string[];
@@ -70,6 +71,14 @@ export function PortfolioImageCarousel({
   useEffect(() => {
     resetZoom();
   }, [index, resetZoom]);
+
+  useEffect(() => {
+    if (!active || count <= 1) return;
+    const prevI = (index - 1 + count) % count;
+    const nextI = (index + 1) % count;
+    warmImageCache(images[prevI]);
+    warmImageCache(images[nextI]);
+  }, [active, count, index, images]);
 
   const prev = useCallback(() => {
     setIndex((i) => (i - 1 + count) % count);
@@ -234,8 +243,9 @@ export function PortfolioImageCarousel({
             src={images[index]}
             alt=""
             className="pointer-events-none h-auto w-auto max-h-full max-w-full object-contain select-none"
-            loading={priority ? "eager" : "lazy"}
-            fetchPriority={priority ? "high" : undefined}
+            loading="eager"
+            fetchPriority={active ? "high" : priority ? "high" : "auto"}
+            decoding="async"
             draggable={false}
           />
         </div>
