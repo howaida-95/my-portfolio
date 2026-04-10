@@ -51,6 +51,8 @@ function ProjectTile({
           priority={priority}
           fetchPriority={priority ? "high" : "auto"}
           quality={85}
+          placeholder={item.blurDataURL ? "blur" : "empty"}
+          blurDataURL={item.blurDataURL || undefined}
         />
         <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:p-4">
           <h3 className="font-display text-base font-semibold text-white sm:text-lg">

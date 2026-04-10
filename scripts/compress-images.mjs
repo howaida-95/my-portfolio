@@ -1,12 +1,22 @@
 /**
- * Converts all PNG/JPG/JPEG images under assets/images/projects
- * into WebP files under public/images/projects, preserving the
- * directory structure that generate-portfolio-manifest.mjs expects.
+ * Image optimisation pipeline.
  *
- * Also copies hero-banner.png and profile.jpg as WebP to assets/images.
+ * Source priority (in order):
+ *   1. assets/images/projects/**\/*.{png,jpg,jpeg}  — original screenshots
+ *   2. public/images/projects/**\/*.webp (non-thumb) — already-converted WebP
+ *
+ * For each source image it produces:
+ *   public/images/projects/**\/{name}.webp        full-res  (max 1920px, q75)
+ *   public/images/projects/**\/{name}_thumb.webp  grid cover (max 800px,  q72)
  *
  * Run once (or after adding new project screenshots):
  *   node scripts/compress-images.mjs
+ *
+ * Then regenerate the manifest:
+ *   node scripts/generate-portfolio-manifest.mjs
+ *
+ * Or do both in one go:
+ *   npm run prepare-images
  */
 
 import fs from "fs";
@@ -17,15 +27,21 @@ import sharp from "sharp";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 
-const SRC_DIR = path.join(ROOT, "assets", "images", "projects");
-const OUT_DIR = path.join(ROOT, "public", "images", "projects");
+const PNG_SRC_DIR  = path.join(ROOT, "assets", "images", "projects");
+const WEBP_SRC_DIR = path.join(ROOT, "public", "images", "projects");
+const OUT_DIR      = path.join(ROOT, "public", "images", "projects");
 
-/** Maximum width for project screenshots (covers are shown ≤ 440 px on most viewports). */
-const MAX_WIDTH = 1920;
-/** WebP quality — good balance between file size and visual fidelity for screenshots. */
-const WEBP_QUALITY = 82;
+const FULL_MAX_WIDTH  = 1920;
+const FULL_QUALITY    = 75;
+const THUMB_MAX_WIDTH = 800;
+const THUMB_QUALITY   = 72;
 
-const IMAGE_EXT = /\.(png|jpe?g)$/i;
+/** Matches original PNG/JPG sources */
+const PNG_EXT  = /\.(png|jpe?g)$/i;
+/** Matches processed full-res WebP (excludes _thumb variants) */
+const FULL_WEBP = /(?<!_thumb)\.webp$/i;
+/** Matches thumb variants — skip these as sources */
+const THUMB_WEBP = /_thumb\.webp$/i;
 
 let processed = 0;
 let skipped = 0;
@@ -33,33 +49,52 @@ let errors = 0;
 const startMs = Date.now();
 
 /**
- * Compress a single image to WebP and write to the output path.
- * Skips if the output already exists and is newer than the source.
+ * Convert one source image into a full-res WebP and a thumbnail WebP.
+ * Each output is skipped individually if already up-to-date.
  */
-async function convertToWebP(srcPath, outPath) {
-  const outWebP = outPath.replace(IMAGE_EXT, ".webp");
+async function convertImage(srcPath, baseName) {
+  const fullOut  = `${baseName}.webp`;
+  const thumbOut = `${baseName}_thumb.webp`;
 
   const srcStat = fs.statSync(srcPath);
-  if (fs.existsSync(outWebP)) {
-    const outStat = fs.statSync(outWebP);
-    if (outStat.mtimeMs >= srcStat.mtimeMs) {
-      skipped++;
-      return;
-    }
+  fs.mkdirSync(path.dirname(fullOut), { recursive: true });
+
+  const needsFull = !fs.existsSync(fullOut) ||
+    fs.statSync(fullOut).mtimeMs < srcStat.mtimeMs;
+  const needsThumb = !fs.existsSync(thumbOut) ||
+    fs.statSync(thumbOut).mtimeMs < srcStat.mtimeMs;
+
+  if (!needsFull && !needsThumb) {
+    skipped++;
+    return;
   }
 
-  fs.mkdirSync(path.dirname(outWebP), { recursive: true });
-
   try {
-    await sharp(srcPath)
-      .resize({ width: MAX_WIDTH, withoutEnlargement: true })
-      .webp({ quality: WEBP_QUALITY, effort: 4 })
-      .toFile(outWebP);
+    const img = sharp(srcPath);
 
-    const srcKB = (srcStat.size / 1024).toFixed(0);
-    const outKB = (fs.statSync(outWebP).size / 1024).toFixed(0);
+    if (needsFull) {
+      await img
+        .clone()
+        .resize({ width: FULL_MAX_WIDTH, withoutEnlargement: true })
+        .webp({ quality: FULL_QUALITY, effort: 4 })
+        .toFile(fullOut);
+    }
+
+    if (needsThumb) {
+      await img
+        .clone()
+        .resize({ width: THUMB_MAX_WIDTH, withoutEnlargement: true })
+        .webp({ quality: THUMB_QUALITY, effort: 4 })
+        .toFile(thumbOut);
+    }
+
+    const srcKB   = (srcStat.size / 1024).toFixed(0);
+    const fullKB  = needsFull  ? (fs.statSync(fullOut).size  / 1024).toFixed(0) : "–";
+    const thumbKB = needsThumb ? (fs.statSync(thumbOut).size / 1024).toFixed(0) : "–";
     console.log(
-      `  ✓  ${path.relative(ROOT, srcPath).padEnd(70)} ${srcKB.padStart(6)} KB → ${outKB.padStart(6)} KB`
+      `  ✓  ${path.relative(ROOT, srcPath).padEnd(70)} ` +
+        `${String(srcKB).padStart(6)} KB  →  full ${String(fullKB).padStart(5)} KB  ` +
+        `thumb ${String(thumbKB).padStart(4)} KB`
     );
     processed++;
   } catch (err) {
@@ -68,42 +103,64 @@ async function convertToWebP(srcPath, outPath) {
   }
 }
 
-/** Walk a directory tree and convert every image file found. */
-async function walkAndConvert(srcBase, outBase, relPath = "") {
+/**
+ * Walk `srcBase` for original PNG/JPG files.
+ * Writes output to the matching path under `outBase` with a .webp extension.
+ */
+async function walkPngSources(srcBase, outBase, relPath = "") {
   const absDir = path.join(srcBase, relPath);
   let entries;
-  try {
-    entries = fs.readdirSync(absDir, { withFileTypes: true });
-  } catch {
-    return;
-  }
+  try { entries = fs.readdirSync(absDir, { withFileTypes: true }); } catch { return; }
 
   for (const entry of entries) {
     const entryRel = relPath ? `${relPath}/${entry.name}` : entry.name;
     if (entry.isDirectory()) {
-      await walkAndConvert(srcBase, outBase, entryRel);
-    } else if (IMAGE_EXT.test(entry.name)) {
-      const srcPath = path.join(srcBase, entryRel);
-      const outPath = path.join(outBase, entryRel);
-      await convertToWebP(srcPath, outPath);
+      await walkPngSources(srcBase, outBase, entryRel);
+    } else if (PNG_EXT.test(entry.name)) {
+      const srcPath  = path.join(srcBase, entryRel);
+      const baseName = path.join(outBase, entryRel).replace(PNG_EXT, "");
+      await convertImage(srcPath, baseName);
+    }
+  }
+}
+
+/**
+ * Walk `srcBase` for existing full-res WebP files (non-thumb) and
+ * produce thumbnails only (full-res already exists as the source itself).
+ */
+async function walkWebpSources(srcBase, relPath = "") {
+  const absDir = path.join(srcBase, relPath);
+  let entries;
+  try { entries = fs.readdirSync(absDir, { withFileTypes: true }); } catch { return; }
+
+  for (const entry of entries) {
+    const entryRel = relPath ? `${relPath}/${entry.name}` : entry.name;
+    if (entry.isDirectory()) {
+      await walkWebpSources(srcBase, entryRel);
+    } else if (FULL_WEBP.test(entry.name) && !THUMB_WEBP.test(entry.name)) {
+      const srcPath  = path.join(srcBase, entryRel);
+      const baseName = srcPath.replace(FULL_WEBP, "");
+      await convertImage(srcPath, baseName);
     }
   }
 }
 
 async function main() {
-  if (!fs.existsSync(SRC_DIR)) {
-    console.error(
-      `[compress-images] Source directory not found: ${SRC_DIR}\n` +
-        "Make sure assets/images/projects exists and contains your screenshots."
-    );
-    process.exit(1);
-  }
+  const hasPngSources = fs.existsSync(PNG_SRC_DIR) &&
+    fs.readdirSync(PNG_SRC_DIR, { recursive: true })
+      .some((f) => PNG_EXT.test(String(f)));
 
-  console.log(`[compress-images] Source : ${SRC_DIR}`);
   console.log(`[compress-images] Output : ${OUT_DIR}`);
-  console.log(`[compress-images] Max width: ${MAX_WIDTH}px  |  WebP quality: ${WEBP_QUALITY}\n`);
+  console.log(`[compress-images] Full   : max ${FULL_MAX_WIDTH}px  q${FULL_QUALITY}`);
+  console.log(`[compress-images] Thumb  : max ${THUMB_MAX_WIDTH}px  q${THUMB_QUALITY}\n`);
 
-  await walkAndConvert(SRC_DIR, OUT_DIR);
+  if (hasPngSources) {
+    console.log(`[compress-images] Source : PNG/JPG files in ${PNG_SRC_DIR}\n`);
+    await walkPngSources(PNG_SRC_DIR, OUT_DIR);
+  } else {
+    console.log(`[compress-images] Source : existing WebP files in ${WEBP_SRC_DIR}\n`);
+    await walkWebpSources(WEBP_SRC_DIR);
+  }
 
   const elapsed = ((Date.now() - startMs) / 1000).toFixed(1);
   console.log(
@@ -112,9 +169,7 @@ async function main() {
   );
 
   if (processed > 0 || skipped === 0) {
-    console.log(
-      "\n[compress-images] Next step: node scripts/generate-portfolio-manifest.mjs"
-    );
+    console.log("\n[compress-images] Next step: node scripts/generate-portfolio-manifest.mjs");
   }
 }
 
