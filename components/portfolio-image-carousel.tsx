@@ -127,6 +127,9 @@ export function PortfolioImageCarousel({
   const onPointerDown = useCallback(
     (e: React.PointerEvent) => {
       if (!isFullscreen || scale <= MIN_SCALE) return;
+      // Clicks on prev/next (and any future controls) bubble here; capturing the
+      // viewport would steal the pointer and block button activation while zoomed.
+      if ((e.target as HTMLElement).closest("button")) return;
       (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
       setDragging(true);
       dragRef.current = {
