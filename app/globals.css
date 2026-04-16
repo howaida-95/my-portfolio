@@ -24,6 +24,9 @@
     --input: 214 20% 88%;
     --ring: 188 78% 41%;
     --radius: 0.375rem;
+    /* Fallback font vars for Tailwind (defined here to avoid Google Fonts downloads). */
+    --font-poppins: system-ui;
+    --font-raleway: system-ui;
   }
 
   .dark {
