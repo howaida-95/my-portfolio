@@ -31,6 +31,8 @@ export function HeroSection() {
           </span>
           <span className="ml-1 inline-block h-6 w-0.5 animate-pulse bg-primary align-middle sm:h-8" />
         </p>
+
+        {/* Intentionally no download CTA here; it's placed in the Resume section. */}
       </div>
     </section>
   );

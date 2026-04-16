@@ -7,7 +7,7 @@ export const SITE = {
   name: "Howaida Sayed",
   siteTitle: "my portfolio",
   tagline: "Senior Frontend Developer.", 
-  typedRoles: ["Frontend Developer", "react js developer", "vue js developer", "react native developer"] as const,
+  typedRoles: ["Frontend Developer", "React js developer", "Vue js developer", "React native developer"] as const,
   profileImage: profilePhoto,
   heroImage:heroImg,
   social: {

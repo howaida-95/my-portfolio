@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   ChevronLeft,
   ChevronRight,
@@ -56,6 +56,16 @@ export function PortfolioImageCarousel({
   const count = images.length;
   const isFullscreen = variant === "fullscreen";
 
+  // Avoid rendering one dot per image for large sets.
+  // Shows a sliding window of dots that always includes the current `index`.
+  const MAX_DOTS = 5;
+  const dotIndices = useMemo(() => {
+    if (count <= MAX_DOTS) return Array.from({ length: count }, (_, i) => i);
+    const half = Math.floor(MAX_DOTS / 2);
+    const start = Math.max(0, Math.min(count - MAX_DOTS, index - half));
+    return Array.from({ length: MAX_DOTS }, (_, i) => start + i);
+  }, [count, index]);
+
   const resetZoom = useCallback(() => {
     setScale(1);
     setPan({ x: 0, y: 0 });
@@ -66,7 +76,7 @@ export function PortfolioImageCarousel({
       setIndex(0);
       resetZoom();
     }
-  }, [active, resetZoom]);
+  }, [active, resetZoom, count, images]);
 
   useEffect(() => {
     resetZoom();
@@ -337,20 +347,6 @@ export function PortfolioImageCarousel({
                 · Scroll or pinch to zoom · drag when zoomed · double-click to toggle
               </span>
             </p>
-            <div className="flex max-w-full flex-wrap justify-center gap-1.5">
-              {images.map((src, i) => (
-                <button
-                  key={src}
-                  type="button"
-                  onClick={() => setIndex(i)}
-                  className={cn(
-                    "h-2 w-2 rounded-full transition-colors sm:h-2.5 sm:w-2.5",
-                    i === index ? "bg-primary" : "bg-white/35 hover:bg-white/60"
-                  )}
-                  aria-label={`Go to image ${i + 1}`}
-                />
-              ))}
-            </div>
           </div>
         )}
         {count === 1 && (
@@ -382,24 +378,6 @@ export function PortfolioImageCarousel({
           <p className="text-center text-sm">
             {index + 1} / {count}
           </p>
-          <div className="flex max-w-full flex-wrap justify-center gap-1.5">
-            {images.map((src, i) => (
-              <button
-                key={src}
-                type="button"
-                onClick={() => setIndex(i)}
-                className={cn(
-                  "h-1.5 w-1.5 rounded-full transition-colors sm:h-2 sm:w-2",
-                  i === index
-                    ? "bg-primary"
-                    : isDark
-                      ? "bg-white/35 hover:bg-white/60"
-                      : "bg-muted-foreground/35 hover:bg-muted-foreground/60"
-                )}
-                aria-label={`Go to image ${i + 1}`}
-              />
-            ))}
-          </div>
         </div>
       )}
     </div>
