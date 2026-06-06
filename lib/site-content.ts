@@ -106,7 +106,7 @@ export const RESUME = {
         "Designed and implemented role-based access control (RBAC), secure routing guards, and multi-level approval workflows for fund transfers.",
         "Built a real-time financial market analysis platform with advanced charting integrations (TradingView, Lightweight Charts) for stock and sector insights.",
         "Developed a KPI management system with interactive dashboards and drag-and-drop functionality for customizable KPI visualization.",
-        "Contributed to a scalable e-commerce theme system (Zid Platform) by transforming UI elements into reusable React components, creating a starter kit that reduced development time by ~50%.",
+        "Contributed to a scalable e-commerce theme system (Zid Platform) by transforming UI elements into reusable React components.",
       ],
     },
     {
