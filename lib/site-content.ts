@@ -81,6 +81,8 @@ export const SKILLS = [
   "Tailwind CSS",
   "Ant Design",
   "Bootstrap",
+  "CI/CD",
+  "Docker",
   "Jest",
   "React Testing Library",
   "Playwright",
