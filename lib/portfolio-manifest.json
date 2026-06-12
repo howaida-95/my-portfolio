@@ -405,6 +405,34 @@
     ]
   },
   {
+    "title": "Barek",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/20-barek/1-home_thumb.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQAwCdASoQAFkAPzmMtVUvKaWjMBVaqeAnCWdr/gAJ5gwU/iQAAP6UaVfJu+l8tpFqN0sXtGrx9OU3PAA1wBhCrwVJGBNH0dSSPHt9aw0gKvuzGuegYeuXbXVsAAAA",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/20-barek/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/20-barek/2-product-details.webp",
+      "/images/projects/2-%20E-Commerce%20websites/20-barek/3-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/20-barek/3-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/20-barek/4-cart.webp"
+    ]
+  },
+  {
+    "title": "Snoor New Version",
+    "excerpt": "open the preview to browse the full set.",
+    "category": "E-Commerce Solutions",
+    "coverImage": "/images/projects/2-%20E-Commerce%20websites/21-snoor-new-version/1-home_thumb.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQBACdASoQAC8APzmGulQvKSWjKqwB4CcJbACzgBZmpG96QgnvooKpVLPYAPF1E/DeLcpYlDLK9Pr6cqdnSnX4jhKOndQJkSEJOE/7IsoY8XTVojWC9tBgjW8XUsCIIYdy54w36prXgAAA",
+    "images": [
+      "/images/projects/2-%20E-Commerce%20websites/21-snoor-new-version/1-home.webp",
+      "/images/projects/2-%20E-Commerce%20websites/21-snoor-new-version/2-product-details.webp",
+      "/images/projects/2-%20E-Commerce%20websites/21-snoor-new-version/3-products.webp",
+      "/images/projects/2-%20E-Commerce%20websites/21-snoor-new-version/4-categories.webp",
+      "/images/projects/2-%20E-Commerce%20websites/21-snoor-new-version/5-cart.webp"
+    ]
+  },
+  {
     "title": "Reek Elnahl",
     "excerpt": "open the preview to browse the full set.",
     "category": "E-Commerce Solutions",
@@ -473,14 +501,13 @@
     "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoQACoAPzGEt1OuqKWitVgIAdAmCWYAAD5/yXLQPkLj6hbM6gAA4A5tJFk4+gcFnc+iv+tvj0AQBVJGWOxXyCJe4Fvl4T1x6TEKn6StL8pLadqrxAZmTlL5kHalb1/k2qr3zwAA",
     "images": [
       "/images/projects/2-%20E-Commerce%20websites/6-piccolo/1-home.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/2-search.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/3-category1.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/4-category2.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/5-category3.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/6-partners.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/7-blogs.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/8-product-details.webp",
-      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/9-product-details2.webp"
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/2-category1.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/3-category2.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/4-category3.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/5-partners.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/6-blogs.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/7-product-details.webp",
+      "/images/projects/2-%20E-Commerce%20websites/6-piccolo/8-product-details2.webp"
     ]
   },
   {
