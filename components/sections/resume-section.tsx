@@ -22,12 +22,12 @@ export function ResumeSection() {
               <p className="mt-3 max-w-3xl text-muted-foreground">{RESUME_INTRO}</p>
             </div>
 
-            {/* <Button asChild variant="default" size="sm"> 
+            <Button asChild variant="default" size="sm"> 
               <a href="/api/cv" download="Senior Frontend Developer Cv_Howaida.pdf">
                 Download CV
               </a>
             </Button>
-            */}
+            
           </div>
         </div>
 
