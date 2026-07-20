@@ -1,6 +1,6 @@
 [
   {
-    "title": "Mohlel Front",
+    "title": "Mohlel customer",
     "excerpt": "open the preview to browse the full set.",
     "category": "Web Applications",
     "coverImage": "/images/projects/1-Web%20Applications/react%20projects/1-mohlel-front/1-home-page_thumb.webp",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "title": "Mohlel Admin",
+    "title": "Mohlel Admin-dashboard",
     "excerpt": "open the preview to browse the full set.",
     "category": "Web Applications",
     "coverImage": "/images/projects/1-Web%20Applications/react%20projects/2-mohlel-admin/1-auth-login_thumb.webp",
@@ -99,7 +99,7 @@
     ]
   },
   {
-    "title": "Dnaneer Front",
+    "title": "Dnaneer customer-dashboard",
     "excerpt": "open the preview to browse the full set.",
     "category": "Web Applications",
     "coverImage": "/images/projects/1-Web%20Applications/react%20projects/3-dnaneer-front/1-investor-login_thumb.webp",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "title": "Dnaneer Admin",
+    "title": "Dnaneer Admin-dashboard",
     "excerpt": "open the preview to browse the full set.",
     "category": "Web Applications",
     "coverImage": "/images/projects/1-Web%20Applications/react%20projects/4-dnaneer-admin/01-login_thumb.webp",
