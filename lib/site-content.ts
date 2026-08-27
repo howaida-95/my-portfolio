@@ -26,7 +26,7 @@ financial systems, and reusable UI architectures.`
 
 export const ABOUT = {
   lead: `I focus on building clean, scalable frontend architectures that balance performance, maintainability, and user experience. I enjoy turning complex business requirements into intuitive, high-quality interfaces, especially in fintech and data-driven environments.`,
-  closing: `I’m currently open to remote opportunities where I can contribute to impactful products, collaborate with strong teams, and continue growing as a frontend engineer. Let’s build something meaningful together.`,  factsLeft: [
+  closing: `I’m currently open to opportunities where I can contribute to impactful products, collaborate with strong teams, and continue growing as a frontend engineer. Let’s build something meaningful together.`,  factsLeft: [
     { label: "Birthday", value: "17 May 1995" },
     { label: "Phone", value: "+20 127 014 1771" },
     { label: "City", value: "Asyut, Egypt" },
